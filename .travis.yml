@@ -15,7 +15,7 @@ postgres:
   username: postgres
   password: postgres
   hostname: localhost
-  pool_size: 10
+  pool: Ecto.Adapters.SQL.Sandbox
 env:
   - MIX_ENV=dev
 before_script:
