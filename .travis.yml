@@ -1,0 +1,9 @@
+language: elixir
+elixir:
+  - 1.9
+otp_release:
+  - 22.0
+sudo: false
+env:
+  global:
+    - ELIXIR_ASSERT_TIMEOUT=2000
