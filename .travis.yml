@@ -13,4 +13,4 @@ env:
   - MIX_ENV=dev
 before_script:
   - cd apps/instacook
-  - mix do ecto.create, ecto.migrate
+  - mix ecto.create
