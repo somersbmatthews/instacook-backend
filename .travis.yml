@@ -6,7 +6,9 @@ otp_release:
 sudo: false
 env:
   global:
-    - ELIXIR_ASSERT_TIMEOUT=2000
+  - ELIXIR_ASSERT_TIMEOUT=2000
+services:
+  - postgresql
 addons:
   postgresql: '11.5'
 env:
