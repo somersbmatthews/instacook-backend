@@ -9,11 +9,13 @@ env:
   - ELIXIR_ASSERT_TIMEOUT=2000
 services:
   - postgresql
-addons:
-  postgresql: '11.5'
-env:
-  global:
-  - PGPORT=5432
+postgres:
+  adapter: postgresql
+  database: instacook_dev
+  username: postgres
+  password: postgres
+  hostname: localhost
+  pool_size: 10
 env:
   - MIX_ENV=dev
 before_script:
