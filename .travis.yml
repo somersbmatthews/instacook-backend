@@ -12,5 +12,4 @@ addons:
 env:
   - MIX_ENV=dev
 before_script:
-  - cd apps/instacook
-  - mix ecto.create
+  - cd apps/instacook/ && mix ecto.create
