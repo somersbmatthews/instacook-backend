@@ -12,6 +12,9 @@ services:
 addons:
   postgresql: '11.5'
 env:
+  global:
+  - PGPORT=5432
+env:
   - MIX_ENV=dev
 before_script:
   - cd apps/instacook/ && mix ecto.create
