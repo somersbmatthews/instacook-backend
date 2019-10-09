@@ -7,3 +7,10 @@ sudo: false
 env:
   global:
     - ELIXIR_ASSERT_TIMEOUT=2000
+addons:
+  postgresql: '11.2'
+env:
+  - MIX_ENV=dev
+before_script:
+  - cd apps/instacook
+  - mix do ecto.create, ecto.migrate
