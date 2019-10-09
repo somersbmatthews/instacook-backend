@@ -10,4 +10,4 @@ config :instacook, Instacook.Repo,
   password: "postgres",
   database: "instacook_dev",
   hostname: "localhost",
-  pool_size: 200
+  pool_size: 10

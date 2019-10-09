@@ -17,4 +17,5 @@ env:
 env:
   - MIX_ENV=dev
 before_script:
+  - psql -c "CREATE DATABASE instacook_dev;" -U postgres
   - cd apps/instacook/ && mix ecto.create
